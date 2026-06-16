@@ -5,8 +5,10 @@
 
 import axios from 'axios';
 
-// Базовий URL серверу (Express працює на порті 5000)
-const API_BASE = 'http://localhost:5000/api';
+// Базовий URL серверу
+// У dev-режимі: http://localhost:5000/api
+// У production (Render): адреса з VITE_API_URL
+const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
 
 // Створюємо екземпляр axios із базовою конфігурацією
 const api = axios.create({
