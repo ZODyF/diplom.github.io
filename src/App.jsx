@@ -58,7 +58,7 @@ function AppLayout({ children }) {
 
 export default function App() {
   return (
-    <BrowserRouter basename="/DiplomShift">
+    <BrowserRouter basename="/diplom.github.io">
       <AuthProvider>
         <Routes>
           {/* Публічний маршрут — форма входу */}
